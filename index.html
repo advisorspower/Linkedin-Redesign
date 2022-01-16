@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/83b4c54a93.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="slick-theme.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/Logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="header-center">
+                    <div class="menu" id="menu0a">
+                        <ul class="navbar">
+                            <li>
+                                <a href="#" onclick="menuToggle()">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M4 11C6.38695 11 8.67613 11.9482 10.364 13.636C12.0518 15.3239 13 17.6131 13 20" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4 4C8.24346 4 12.3131 5.68571 15.3137 8.68629C18.3143 11.6869 20 15.7565 20 20" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5 20C5.55228 20 6 19.5523 6 19C6 18.4477 5.55228 18 5 18C4.44772 18 4 18.4477 4 19C4 19.5523 4.44772 20 5 20Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </i>
+                                    <span>FEED</span>
+                                </a>
+                                <ul class="submenu dismiss">
+                                    <li><a href="#">Item - 1</a></li>
+                                    <li><a href="#">Item - 1</a></li>
+                                    <li><a href="#">Item - 1</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" >
+                                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 3.13C16.8604 3.3503 17.623 3.8507 18.1676 4.55231C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89317 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </i>
+                                    <span>Network</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" >
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" >
+                                            <path d="M20 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </i>
+                                    <span>Jobs</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </i>
+                                    <span>Chat</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" >
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="menubtn" width="24" height="24" viewBox="0 0 24 24" fill="none" >
+                                            <path d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.73 21C13.5542 21.3031 13.3019 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </i>
+                                    <span>Notices</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <form action="">
+                            <i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 21L16.65 16.65" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </i>
+                            <input type="text" placeholder="Search">
+                        </form>
+                    </div>
+                    <div class="profile">
+                        <div class="profileimg">
+                            <img src="images/Ellipse.png" alt="">
+                        </div>
+                        <div class="profile-content">
+                            <div class="profilename">
+                                <span>D.Kargaev</span>
+                                <span>YOU</span>
+                            </div>
+                            <div class="profile-views">
+                                <span>367 views today</span>
+                                <div class="viewpercent">
+                                    <span>+32</span>
+                                    <i class="fas fa-arrow-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="other">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <span>Other</span>
+                </div>
+            </div>
+        </header>
+        <div class="profile-wrapper">
+            <div id="profile-wrapper">
+                <main id="main">
+                    <div class="main-profile">
+                        <div class="profileheroimage">
+                            <div class="profile-edit">
+                                <div class="uploadimg">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M14 10V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V10" stroke="#181818" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M11.3333 5.33333L8 2L4.66667 5.33333" stroke="#181818" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 2V10" stroke="#181818" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </i>
+                                </div>
+                                <div class="right-edits">
+                                    <div class="editprofile">
+                                        <i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                <g clip-path="url(#clip0_1_99)">
+                                                <path d="M8.0257 3.61491H3.35903C3.00541 3.61491 2.66627 3.75539 2.41622 4.00544C2.16617 4.25549 2.0257 4.59463 2.0257 4.94825V14.2816C2.0257 14.6352 2.16617 14.9743 2.41622 15.2244C2.66627 15.4744 3.00541 15.6149 3.35903 15.6149H12.6924C13.046 15.6149 13.3851 15.4744 13.6352 15.2244C13.8852 14.9743 14.0257 14.6352 14.0257 14.2816V9.61491" stroke="#181818" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M13.0257 2.61484C13.2909 2.34962 13.6506 2.20062 14.0257 2.20062C14.4008 2.20062 14.7605 2.34962 15.0257 2.61484C15.2909 2.88005 15.4399 3.23976 15.4399 3.61484C15.4399 3.98991 15.2909 4.34962 15.0257 4.61484L8.69236 10.9482L6.0257 11.6148L6.69236 8.94817L13.0257 2.61484Z" stroke="#181818" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_1_99">
+                                                <rect width="16" height="16" fill="white" transform="translate(0.692383 0.948242)"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </i>
+                                        <span>Edit profile</span>
+                                    </div>
+                                    <div class="profilesettings">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profilecontent">
+                            <div class="profileimage">
+                                <img src="images/profileimage.png" alt="">
+                            </div>
+                            <div class="profilecontents">
+                                <div class="profilecontentheading">
+                                    <span id="name">Dmitry Kargaev
+                                        <img src="images/inLogo.png" alt="">
+                                    </span>
+                                    <div class="location">
+                                        <i class="fas fa-location-arrow"></i>
+                                        <span>Saint Peterburg, Russian Federation</span>
+                                    </div>
+                                </div>
+                                <p id="about">Freelance UX/UI designer, 80+ projects in web design, mobile apps (iOS & Android) and creative projects. Open to offers.</p>
+                                <div class="profilebuttons">
+                                    <a href="#" class="profilecontact">Contact info</a>
+                                    <a href="#" class="profileconnetions">1,043 Connections</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="strolling">
+                        <div class="row" id="strolling">
+                            <div class="strolling-profile">Profile</div>
+                            <div class="strolling-activity">Activity & interests</div>
+                            <div class="strolling-articles">Articles (3)</div>
+                        </div>
+                    </div>
+                    <div class="about">
+                            <h1>About</h1>
+                            <p>I'm more experienced in eCommerce web projects and mobile banking apps, but also like to work with creative projects, such as landing pages or unusual corporate websites. </p>
+                            <a href="#">See more</a>
+                    </div>
+                    <div class="projects">
+                        <div class="projectitle">
+                            <h1>Projects</h1>
+                            <span>3 of 12</span>
+                        </div>
+                        <div class="allprojects">
+                            <div class="project">
+                                <div class="projectimg">
+                                    <img src="images/project.png" alt="">
+                                </div>
+                                <div class="project-content">
+                                    <a href="#">Zara redesign concept</a>
+                                    <span>UX/UI design, 15.07.2019</span>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <div class="projectimg">
+                                    <img src="images/project1.png" alt="">
+                                </div>
+                                <div class="project-content">
+                                    <a href="#">SCTHON event brand identity</a>
+                                    <span>Graphic design, 03.31.2019</span>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <div class="projectimg">
+                                    <img src="images/project2.png" alt="">
+                                </div>
+                                <div class="project-content">
+                                    <a href="#">Drozd. Brand identity. 2016</a>
+                                    <span>Graphic design, 03.04.2016</span>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <div class="projectimg">
+                                    <img src="images/project3.jpg" alt="">
+                                </div>
+                                <div class="project-content">
+                                    <a href="#">Drozd. Brand identity. 2016</a>
+                                    <span>Graphic design, 03.04.2016</span>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <div class="projectimg">
+                                    <img src="images/project4.jpg" alt="">
+                                </div>
+                                <div class="project-content">
+                                    <a href="#">Drozd. Brand identity. 2016</a>
+                                    <span>Graphic design, 03.04.2016</span>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <div class="projectimg">
+                                    <img src="images/project5.jpg" alt="">
+                                </div>
+                                <div class="project-content">
+                                    <a href="#">Drozd. Brand identity. 2016</a>
+                                    <span>Graphic design, 03.04.2016</span>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <div class="projectimg">
+                                    <img src="images/project6.jpg" alt="">
+                                </div>
+                                <div class="project-content">
+                                    <a href="#">Drozd. Brand identity. 2016</a>
+                                    <span>Graphic design, 03.04.2016</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="showall">
+                            <a href="#">Show all (12)</a>
+                        </div>
+                    </div>
+                    <div class="Skills-Endoresments">
+                        <div class="skillstitle">
+                            <h1>Skills & Endoresments</h1>
+                        </div>
+                        <div class="skills">
+                            <div class="skill">
+                                <div class="skillname">
+                                    <span>User experience (UX)</span>
+                                    <span>6</span>
+                                </div>
+                                <div class="skillcounts">
+                                    <div class="users">
+                                        <img src="images/user1.png" alt="">
+                                        <img src="images/user2.png" alt="">
+                                        <img src="images/user3.png" alt="">
+                                        <img src="images/user4.png" alt="">
+                                        <img src="images/user5.png" alt="">
+                                        <div class="count">
+                                            <span>+1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skillname">
+                                    <span>User interface (UI)</span>
+                                    <span>7</span>
+                                </div>
+                                <div class="skillcounts">
+                                    <div class="users">
+                                        <img src="images/user4.png" alt="">
+                                        <img src="images/user2.png" alt="">
+                                        <img src="images/user3.png" alt="">
+                                        <img src="images/user1.png" alt="">
+                                        <img src="images/user5.png" alt="">
+                                        <div class="count">
+                                            <span>+2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skillname">
+                                    <span>Brand identity</span>
+                                    <span>5</span>
+                                </div>
+                                <div class="skillcounts">
+                                    <div class="users">
+                                        <img src="images/user2.png" alt="">
+                                        <img src="images/user1.png" alt="">
+                                        <img src="images/user5.png" alt="">
+                                        <img src="images/user4.png" alt="">
+                                        <img src="images/user3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="showall">
+                            <a href="#">Show all (17)</a>
+                        </div>
+                    </div>
+                    <div class="experience0">
+                        <div class="experiencetitle">
+                            <h1>Experience</h1>
+                        </div>
+                        <div class="experiences">
+                            <div class="experience">
+                                <div class="expimg">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+                                            <rect width="54" height="54" rx="27" fill="url(#paint0_linear_1_126)"/>
+                                            <path d="M27 40.3333C34.3638 40.3333 40.3333 34.3638 40.3333 27C40.3333 19.6362 34.3638 13.6666 27 13.6666C19.6362 13.6666 13.6667 19.6362 13.6667 27C13.6667 34.3638 19.6362 40.3333 27 40.3333Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.6667 27H40.3333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M27 13.6666C30.335 17.3178 32.2303 22.056 32.3333 27C32.2303 31.9439 30.335 36.6822 27 40.3333C23.665 36.6822 21.7697 31.9439 21.6667 27C21.7697 22.056 23.665 17.3178 27 13.6666V13.6666Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_1_126" x1="47" y1="3.53765e-07" x2="8.5" y2="54" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FFB75E"/>
+                                            <stop offset="1" stop-color="#ED8F03"/>
+                                            </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </i>
+                                </div>
+                                <div class="exp-content">
+                                    <h3>Freelance UX/UI designer</h3>
+                                    <div class="expwork">
+                                        <span>Self Employed</span>
+                                        <span>Around the world</span>
+                                    </div>
+                                    <div class="expworkDate">
+                                        <span>Jun 2016 — Present</span>
+                                        <span>3 yrs 3 mos</span>
+                                    </div>
+                                    <div class="expworkAbout">
+                                        <p>Work with clients and web studios as freelancer.  Work in next areas: eCommerce web projects; creative landing pages; iOs and Android apps; corporate web sites and corporate identity sometimes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience">
+                                <div class="expimg">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="54" viewBox="0 0 54 54" fill="none">
+                                            <rect width="54" height="54" rx="27" fill="url(#pattern0)"/>
+                                            <defs>
+                                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_1_140" transform="scale(0.00444444)"/>
+                                            </pattern>
+                                            <image id="image0_1_140" width="225" height="225" xlink:href="data:image/png;base64,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"/>
+                                            </defs>
+                                        </svg>
+                                    </i>
+                                </div>
+                                <div class="exp-content">
+                                    <h3>UX/UI designer</h3>
+                                    <div class="expwork">
+                                        <span>Upwork</span>
+                                        <span>International</span>
+                                    </div>
+                                    <div class="expworkDate">
+                                        <span>Jun 2019 — Present</span>
+                                        <span>3 mos</span>
+                                    </div>
+                                    <div class="expworkAbout">
+                                        <p>New experience with Upwork system. Work in next areas: UX/UI design, graphic design, interaction design, UX research.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education0">
+                        <div class="educationtitle">
+                            <h1>Education</h1>
+                        </div>
+                        <div class="educations">
+                            <div class="education">
+                                <div class="expimg">
+                                    <img src="images/univeristy.png" alt="">
+                                </div>
+                                <div class="exp-content">
+                                    <h3>Moscow State Linguistic University</h3>
+                                    <div class="expwork">
+                                        <span>Bachelor's degree Field Of StudyComputer and Information Systems Security/Information Assurance</span>
+                                    </div>
+                                    <div class="expworkDate">
+                                        <span>2013 — 2017</span>
+                                    </div>
+                                    <div class="expworkAbout">
+                                        <p>Additional English classes and UX profile courses​</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <aside id="sidebar">
+                <div class="DashboardSidebar">
+                    <div class="sidebarHeading">
+                        <span>your dashboard</span>
+                        <a href="#">go to stats</a>
+                    </div>
+                    <div class="dasboardContent">
+                        <div class="viewstoday">
+                            <span>367</span>
+                            <span>Views today</span>
+                        </div>
+                        <div class="viewstoday">
+                            <span>15</span>
+                            <span>posts views</span>
+                        </div>
+                        <div class="viewstoday">
+                            <span>9</span>
+                            <span>Search appereances</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="visitors0">
+                    <div class="sidebarHeading">
+                        <span>visitors</span>
+                        <a href="#">view all</a>
+                    </div>
+                    <div class="visitors">
+                        <div class="visitor">
+                            <img src="images/Photo.png" alt="">
+                            <div class="visitorcontent">
+                                <span>Darlene Black</span>
+                                <span>HR-manager, 10 000 connec...</span>
+                            </div>
+                        </div>
+                        <div class="visitor">
+                            <img src="images/Photo1.png" alt="">
+                            <div class="visitorcontent">
+                                <span>Theresa Steward</span>
+                                <span>iOS developer</span>
+                            </div>
+                        </div>
+                        <div class="visitor">
+                            <img src="images/Photo2.png" alt="">
+                            <div class="visitorcontent">
+                                <span>Brandon Wilson</span>
+                                <span>Senior UX designer</span>
+                            </div>
+                        </div>
+                        <div class="visitor">
+                            <img src="images/Photo3.png" alt="">
+                            <div class="visitorcontent">
+                                <span>Brandon Wilson</span>
+                                <span>Senior UX designer</span>
+                            </div>
+                        </div>
+                        <div class="visitor">
+                            <img src="images/Photo4.png" alt="">
+                            <div class="visitorcontent">
+                                <span>Brandon Wilson</span>
+                                <span>Senior UX designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coursesSidebar">
+                    <div class="sidebarHeading">
+                        <span>You may like these courses</span>
+                    </div>
+                    <div class="courses">
+                        <div class="course">
+                            <div class="course-image">
+                                <img src="images/course.png" alt="">
+                                <a class="playbutton">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                            <div class="course-content">
+                                <h1>UX Foundations:
+                                    Prototyping</h1>
+                                <span class="courseViews">27,959 viewers</span>
+                            </div>
+                        </div>
+                        <div class="course">
+                            <div class="course-image">
+                                <img src="images/course1.png" alt="">
+                                <a class="playbutton">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                            <div class="course-content">
+                                <h1>Designing with
+                                    Adobe XD and pro</h1>
+                                <span class="courseViews">9,122 viewers</span>
+                            </div>
+                        </div>
+                        <div class="course">
+                            <div class="course-image">
+                                <img src="images/course2.png" alt="">
+                                <a class="playbutton">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                            <div class="course-content">
+                                <h1>UX Foundations:
+                                    Styles and GUIs</h1>
+                                <span class="courseViews">13,858 viewers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <footer>
+            <div class="row">
+                <div class="footer">
+                    <div class="footer-left">
+                        <div class="footerlogo">
+                            <a href="#">
+                                <img src="images/Logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footernav">
+                            <div class="menu0a">
+                                <h1>Navigation</h1>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Advertising</a></li>
+                                    <li><a href="#">Small Business</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu0a">
+                                <ul>
+                                    <li><a href="#">Talent Solutions</a></li>
+                                    <li><a href="#">Marketing Solutions</a></li>
+                                    <li><a href="#">Sales Solutions</a></li>
+                                    <li><a href="#">Safery Center</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu0a">
+                                <ul>
+                                    <li><a href="#">Community Guidelines
+                                    </a></li>
+                                    <li><a href="#">Marketing Solutions</a></li>
+                                    <li><a href="#">Privacy & Terms </a></li>
+                                    <li><a href="#">Mobile App</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="fastaccess">
+                            <span class="fastaccesstitle">fast access</span>
+                            <a href="#" class="Questions">
+                                <span >Questions?</span>
+                                <i class="far fa-question-circle"></i>
+                            </a>
+                            <a href="" class="Settings">
+                                <span>Settings</span>
+                                <i class="fas fa-cog"></i>
+                            </a>
+                        </div>
+                        <div class="footerlanguage">
+                            <span>Language</span>
+                            <button>English</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
